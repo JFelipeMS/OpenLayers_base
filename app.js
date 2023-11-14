@@ -25,13 +25,6 @@ app.get('/map1', (req, res) => {
   res.render('layout', { title: 'Mapa 1',body: 'Mapa Base',script: 'main1.bundle.js' });
 });
 
-app.get('/map2', (req, res) => {
-  res.render('layout', { title: 'Mapa 2',body: 'map2',script: 'main2.bundle.js' });
-});
-
-app.get('/map3', (req, res) => {
-  res.render('layout', { title: 'Mapa 3',body: 'map3',script: 'main3.bundle.js' });
-});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
